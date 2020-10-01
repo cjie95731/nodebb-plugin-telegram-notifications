@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "updateTypes": ["patch", "minor"],
+      "rangeStrategy": "pin",
+      "groupName": "devDependencies (non-major)"
+    },
+    {
+      "depTypeList": ["Dependencies"],
+      "updateTypes": ["patch", "minor"],
+      "rangeStrategy": "pin"
+      "groupName": "Dependencies (non-major)"
+    }
+  ]
+}
